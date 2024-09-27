@@ -1,7 +1,9 @@
 
-.banner {
-    height: calc(100vh - 4rem);
+.banner { /*Acessa o banner*/
+    height: calc(100vh - 4rem); /*Isso é um segredo do site. 
+    A altura é calculada para ser do tamanho da altura do dispositivo menos a altura do cabecalho
+    Como resultado, o site mostra o cabecalho + banner*/
     background-image: url('../assets/Sao_jose_EC_camisa.jpg');
     background-size: cover;
-    background-attachment: fixed;
+    background-attachment: fixed
 }
