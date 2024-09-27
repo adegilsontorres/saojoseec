@@ -2,40 +2,67 @@
 <html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>São José EC</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Salva o tamanho da tela do dispositivo. Isso é importante para o CSS -->
+    <title>São José EC</title> <!-- Denife o nome que será exibido na aba do navegador -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> <!-- Conecta com o site Google Fonts-->
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./pag/styles/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet"> <!-- Conceta com a API do Google Fonts para buscar a fonte Ubuntu-->
+    <link rel="stylesheet" href="./pag/styles/style.css"> <!-- Fazer o link com a página Style.css-->
     <link rel="stylesheet" href="./pag/styles/cabecalho.css">
     <link rel="stylesheet" href="./pag/styles/banner.css">
     <link rel="stylesheet" href="./pag/styles/artigo.css">
     <link rel="stylesheet" href="./pag/styles/rodape.css">
 </head>
 <body>
-    <header class="cabecalho">
+    <header class="cabecalho"> <!-- Cria o cabecalho. Dentro do cabecalho, há dois grupos, o home e os links-->
 
-        <div class="cabecalho__home">
+        <!-- As classes são definidas de acordo com a hierarquia da construção do site.
+         Ex.: cabecalho__acesso__lista__item__link. Esta classe mostra que a classe "link" pertence à item, que por sua vez pertence à lista e por fim, acesso e cabecalho.
+         
+         O tamanho da classe não precisa ser tão grande assim, é possível remover a classe das tags <a> e das tags <li>
 
-            <a class="cabecalho__home__link" href="index.html" title="Ir à página inicial">São José EC</a>
+        Caso não tivesse classe, o CSS acessaria assim: 
+
+        //CSS
+        .cabecalho__acesso__lista li a {
+            
+        }
+        Esse código acessa uma tag <a> dentro de uma tag <li> que por sua vez, dentro de cabecalho__acesso__lista
+         
+         -->
+
+        <div class="cabecalho__home"> <!-- Cria o grupo "home" -->
+
+            <a class="cabecalho__home__link" href="index.html" title="Ir à página inicial">São José EC</a> <!-- Gera o link à homepage-->
 
         </div>
 
-        <div>
+        <div class="cabecalho__acesso"> <!-- Cria um segundo grupo dentro do cabecalho-->
 
-            <ul class="cabecalho__lista">
-                <li class="cabecalho__lista__item">
-                    <a class="cabecalho__lista__item__link" href="https://www.figma.com/design/WRC5PBIlkhU2pskTlqpx3t/São-José-EC?node-id=5-31&node-type=frame&t=sgHv98cx9Aaxfn8y-0" title="Ir à figma.com" target="_blank">Figma</a>
+            <ul class="cabecalho__acesso__lista"> <!-- Cria uma lista não ordenada (aquela lista com bolinhas)-->
+                <li class="cabecalho__acesso__lista__item"> <!-- Cria uma lista -->
+                    <a class="cabecalho__acesso__lista__item__link" 
+                    href="https://www.figma.com/design/WRC5PBIlkhU2pskTlqpx3t/São-José-EC?node-id=5-31&node-type=frame&t=sgHv98cx9Aaxfn8y-0" 
+                    title="Ir à figma.com" 
+                    target="_blank">Figma</a> <!-- Cria um link dentro da lista. Este link tem alguns atributos
+                    
+                    href= É o link de fato que será acessado
+                    title= Aparece ao parar o mouse em cima do link
+                    target= Define se o navegador abrirá uma nova aba ou irá atualizar na mesma aba
+                    
+                    -->
                 </li>
-                <li class="cabecalho__lista__item">
-                    <a class="cabecalho__lista__item__link" href="https://github.com/adegilsontorres/saojoseec" title="Ir à Github.com" target="_blank">Github</a>
+                <li class="cabecalho__acesso__lista__item">
+                    <a class="cabecalho__acesso__lista__item__link" href="https://github.com/adegilsontorres/saojoseec" title="Ir à Github.com" target="_blank">Github</a>
                 </li>
-                <li class="cabecalho__lista__item">
-                    <a class="cabecalho__lista__item__link" href="https://saojoseec.vercel.app" title="Ir à vercel.com" target="_blank">Vercel</a>
+                <li class="cabecalho__acesso__lista__item">
+                    <a class="cabecalho__acesso__lista__item__link" 
+                    href="https://saojoseec.vercel.app" 
+                    title="Ir à vercel.com" 
+                    target="_blank">Vercel</a>
                 </li>
-                <li class="cabecalho__lista__item">
-                    <a class="cabecalho__lista__item__link" href="#" title="Ir à " target="_blank">Lorem</a>
+                <li class="cabecalho__acesso__lista__item">
+                    <a class="cabecalho__acesso__lista__item__link" href="./pag/facaumacopia.html" title="Ir à " target="_blank">Lorem</a>
                 </li>
             </ul>
 
@@ -47,12 +74,14 @@
     <section class="banner">
     </section>
 
-    <section class="tarja">
-            <p class="tarja__paragrafo">História do Clube</p>
+    <section class="tarja"> <!-- A tarja se repete ao longo do site e por isso está no Style.css. Ela isolada, pois ocupa todo o tamanho do site. Caso esta section tivesse dentro da section artigo, seu tamanho ficaria limitado aos tributos da section artigo ou seja, ficaria menor que o esperado -->
+            <p class="tarja__paragrafo">História do Clube</p> <!-- Esta tag recebe classe, pois o tamanho da fonte é maior que o habitual no site. Assim, será modicidado no arquivo style.css-->
     </section>
 
-    <section class="artigo">
-        <div class="container esq-dir">
+    <section class="artigo"> <!-- A classe artigo serve para criar uma borda vazia entre a borda do site e o conteúdo do texto -->
+        <div class="container esq-dir"> <!-- Aqui está um segredo do site. Esta div possui duas divs dentro dela e também duas classes: "Container" e "esq-dir". 
+            
+            O segredo está no esq-dir. Essa classe será utilizada para difinir o que vem primeiro: texto ou imagem -->
             <div class="container__texto">
                 <h3 class="container__titulo">Voluptas a ab delectus eius cumque ad</h3>
                 <p class="container__texto__paragrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id adipisci, saepe quaerat excepturi incidunt et velit, asperiores natus, rem sit ipsam. Quis itaque illum aspernatur natus! Voluptas a ab delectus eius cumque ad! Nisi excepturi amet eveniet? Itaque impedit, nesciunt possimus omnis ad, hic sint quaerat ipsum perferendis, voluptatibus nisi!</p>
@@ -66,7 +95,7 @@
             
         </div>
 
-        <div class="container dir-esq">
+        <div class="container dir-esq"> <!-- Esta div está recendo o classe "dir-esq" pois o CSS fará a inversão entre texto e foto. -->
             <div class="container__texto">
                 <p class="container__texto__paragrafo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Id adipisci, saepe quaerat excepturi incidunt et velit, asperiores natus, rem sit ipsam. Quis itaque illum aspernatur natus! Voluptas a ab delectus eius cumque ad! Nisi excepturi amet eveniet? Itaque impedit, nesciunt possimus omnis ad, hic sint quaerat ipsum perferendis, voluptatibus nisi!</p>
             </div>
@@ -184,16 +213,6 @@
         <img src="./pag/assets/icone-saojoseec.webp" alt="logo São José EC" class="rodape__logo__imagem">
     </div>
 </footer>
-
-
-
-
-
-
-
-
-
-
 
 </body>
 </html>
