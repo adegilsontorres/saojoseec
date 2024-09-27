@@ -8,8 +8,7 @@
     O código "list-style: none" remove a bolinha padrão que fica nas listas não ordenadas (<ul>)*/
     text-decoration: none; /*"text-decoration: none" serve para remover o underline dos links (<a>)*/
     font-family: "Ubuntu", sans-serif; /*Define a fonte para todo o site*/
-    max-width: 100vw;
-    flex-grow: 1;
+
 }
 
 :root { /*Root cria variáveis para nosso CSS. Assim é possível acessar os atributos através do nome. 
