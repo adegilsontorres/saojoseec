@@ -1,26 +1,43 @@
-.artigo{
-    padding: 1.5rem 8rem 2.5rem 8rem;
+.artigo{ /*Acessa o campo de classe artigo*/
+    padding: 1.5rem 8rem 2.5rem 8rem; /*Cria um espaçamento interno para o campo artigo
+    Altura: 1.5rem
+    Lado esquerdo: 8rem
+    embaixo: 2.5rem
+    baixo: 8rem;
+    
+    */
 }
 
-.esq-dir {
-    flex-direction: column;
-    flex-wrap: wrap;
-}
-
-.dir-esq {
-    flex-direction: column;
-    flex-wrap: wrap-reverse;
-}
-
-.container {
-    height: 320px; 
+.container { /*Acessa os elementos que têm a classe container*/
+    height: calc(100vh / 2);  /*Esse atributo é super importante. O flex-wrap depende dele para quebrar ou não.
+    Aqui vamos definir o tamanho do elemento pai.
+    
+    Se o container for muito alto, o texto e a imagem caberão dentro da altura dele e
+     não ficarão ao lado como queremos
+     
+     Cálculo é que o tamanho do container deve ser metade da altura do dispositivo*/
     display: flex;
     justify-content: space-between;
-    margin-top: 2rem;
+    margin-top: 2rem; /*Cria uma distância entre o elemento que está acima do container*/
+}
+
+.esq-dir { /*Acessa os elementos que tem a classe esq-dir*/
+    flex-direction: column; /*Como padrão, o display flex coloca um elemento ao lado do outro.
+    Aqui, estamos colocando os elementos embaixo do outro. 
+    Caso contrário, colocariamos o atributo como flex-direction: row*/
+    flex-wrap: wrap; /*Se não houver este atributo, o CSS vai colocar o texto e a imagem embaixo do outro.
+    Como não queremos isso, vamos forçar uma quebra pro lado caso não tenha mais espaço no elemento pai*/
+}
+
+.dir-esq { /*Acessa os elementos que têm a classe dir-esq*/
+    flex-direction: column;
+    flex-wrap: wrap-reverse; /*Quando não houver mais espaço no elemento pai, o flex-box irá fazer uma quebra,
+    porém, irá inverter a ordem da quebra.
+    No caso, a imagem ficará primeiro*/
 }
 
 .container__texto {
-    width: 70%;
+    width: 70%; /*Faz um limite para que o texto não toque na imagem*/
 }
 
 .container__titulo {
@@ -34,10 +51,10 @@
 
 .container__imagem {
     display: flex;
-    flex-direction: column;
+    flex-direction: column; /*Sem este atributo, a imagem fica mais para a esquerda e deixa uma margem vazia à direita*/
 }
 
 .container__imagem__item {
-    height: 320px;
+    height: 320px; /*Força o tamanho das imagens como 320px*/
 }
 
