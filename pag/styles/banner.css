@@ -1,0 +1,7 @@
+
+.banner {
+    height: calc(100vh - 4rem);
+    background-image: url('../assets/Sao_jose_EC_camisa.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+}

@@ -1,0 +1,39 @@
+*{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif;
+}
+
+:root {
+    --cor-azul-anil: #004899;
+    --cor-amarelo: #ffe41c;
+    --cor-azul-celeste: #7ea3cc;
+    --cor-branco: #fefded;
+
+    --fonte-padrao: "Ubuntu", sans-serif;
+
+}
+
+
+li:hover {
+    border-bottom: 2px solid var(--cor-amarelo);
+}
+
+.tarja {
+    background-color: var(--cor-azul-anil);
+
+    color: var(--cor-branco);
+    text-align: center;
+    font-size: 24px;
+    /* width: 100%; */
+    /* Removi este trecho, pois a tarja estava vazando para fora da página */
+    padding: 1.5rem;
+}
+
+.legenda-imagem {
+    font-size: 14px;
+    font-weight: 200;
+    color: #212121;
+}

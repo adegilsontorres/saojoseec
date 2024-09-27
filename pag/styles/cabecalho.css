@@ -1,0 +1,31 @@
+
+.cabecalho {
+    height: 4rem;
+
+    background-color: var(--cor-azul-anil);
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 8px 64px;
+
+    position: sticky;
+    top: 0;
+
+    border-bottom: 2px solid var(--cor-branco);
+}
+
+.cabecalho__home__link {
+    color: var(--cor-branco);
+    font-weight: 600;
+}
+
+.cabecalho__lista {
+    display: flex;
+    gap: 64px;
+}
+
+.cabecalho__lista__item__link{
+    color: var(--cor-branco);
+}
