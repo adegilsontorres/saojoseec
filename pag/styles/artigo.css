@@ -102,7 +102,7 @@
     .container__titulo {
         font-size: 18px;
         margin-bottom: 1rem;
-        white-space: nowrap;
+        white-space: wrap;
         width: 100%;
         /* text-align: center; */
     }
