@@ -11,9 +11,15 @@
     flex-wrap: wrap;
 }
 
-.sumir {
+.responsivo {
     display: none;
 }
+
+.ocultar {
+    display: block;
+}
+
+
 
 :root { /*Root cria variáveis para nosso CSS. Assim é possível acessar os atributos através do nome. 
     Se algum dia mudarmos as cores, irá mudar para todos elementos que estão utilizando variáveis nos site*/
@@ -48,6 +54,23 @@ li a:hover { /*Sempre que passarmos o mouse em cima de qualquer lista que tenha 
     font-size: 14px;
     font-weight: 200;
     color: var(--cor--preto);
+}
+
+
+@media screen and (max-width: 1024px) {
+    
+    .responsivo {
+        display: block;
+    }
+    
+    .ocultar {
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    
+
+    
 }
 
 @media screen and (max-width: 420px) {
