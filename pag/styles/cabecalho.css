@@ -34,18 +34,88 @@
 }
 
 
+
+/**/
+.cabecalho__menu__lista {
+    /*Acessa a tag <ul>*/
+    display: flex;
+    /*Coloca os itens filhos da tag <ul> (no caso as tag <li>) em linha e não embaixo do outro*/
+    gap: 32px;
+    /*Cria um espaço entre cada tag <li>*/
+}
+
+.cabecalho__menu__lista__item {
+    /*Acessa a tag <a> que está no cabecalho*/
+    color: var(--cor-branco);
+    /*Define a cor branco para as tag <a>*/
+}
+
+/*Menu cascata*/
+/* .cabecalho__menu-drop__lista__item{
+    display: block;
+    position: relative;
+    float: left;
+} */
+
+.cabecalho__menu-drop__lista {
+    display: none;
+}
+
+.cabecalho__menu-drop__lista__item a{
+    display: block;
+    text-decoration: none;
+    color: var(--cor-branco);
+    padding: 15px 15px;
+    background: var(--cor-azul-anil);
+    margin-left: 1px;
+    white-space: nowrap;
+}
+
+.cabecalho__menu-drop__lista__item a:hover {
+    background: var(--cor-azul-celeste);
+}
+
+li:hover ul {
+    display: block;
+    position: absolute;
+}
+
+
+li:hover a {
+    background: var(--cor-azul-celeste);
+}
+
+li:hover li a:hover {
+    background: var(--cor-azul-anil);
+}
+
+@media screen and (max-width: 1024px) {
+    
+   li a, ul li {
+    font-size: 14px;
+}
+
+    
+}
+
 @media screen and (max-width: 768px) {
     .cabecalho {
         height: 2rem;
-        padding: 16px 32px;
+        padding: 16px 16px;
         max-width: 100vw;
+    }
+
+   li a, ul li {
+        font-size: 12px;
     }
 
 }
 
 @media screen and (max-width: 420px) {
     .cabecalho {
+        height: 2rem;
         padding: 8px 1.5rem;
+        max-width: 100vw;
     }
     
 }
