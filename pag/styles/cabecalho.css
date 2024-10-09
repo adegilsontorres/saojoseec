@@ -1,5 +1,5 @@
 .menu-mobile__lista, #menu,
-.cabecalho__menu-hamburguer {
+.cabecalho__menu-hamburguer, .container__rotulo {
     display: none;
 }
 
