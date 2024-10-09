@@ -112,7 +112,7 @@ li:hover li a:hover {
         display: block;
     }
     
-    .cabecalho__menu-hamburguer {
+    .cabecalho__menu-hamburguer, .container__rotulo {
         width: 48px;
         height: 48px;
         display: block;
