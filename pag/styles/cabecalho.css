@@ -108,25 +108,27 @@ li:hover li a:hover {
 }
 
 @media screen and (max-width: 768px) {
-    .container__botao:checked~.menu-mobile__lista {
-        display: block;
-    }
+
     
     .cabecalho__menu-hamburguer, .container__rotulo {
+        display: block;
         width: 48px;
         height: 48px;
-        display: block;
     }
-
+    
     .lista-desktop {
         display: none;
     }
-
+    
     .cabecalho {
         height: 4rem;
         padding: 1rem 2rem;
     }
-
+    
+    .container__botao:checked~.menu-mobile__lista {
+        display: block;
+    }
+    
     .menu-mobile__lista {
         height: 75vh;
         width: 50vw;
