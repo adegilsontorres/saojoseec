@@ -17,17 +17,12 @@
 
 
 .rodape__acesso__lista {
-    /*Acessa a tag <ul>*/
     display: flex;
-    /*Coloca os itens filhos da tag <ul> (no caso as tag <li>) em linha e não embaixo do outro*/
     gap: 64px;
-    /*Cria um espaço entre cada tag <li>*/
 }
 
 .rodape__acesso__lista__item__link {
-    /*Acessa a tag <a> que está no rodape*/
     color: var(--cor-branco);
-    /*Define a cor branco para as tag <a>*/
 }
 
 
