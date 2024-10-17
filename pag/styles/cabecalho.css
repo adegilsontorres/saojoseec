@@ -4,63 +4,34 @@
 }
 
 .cabecalho {
-    /*Criação do cabeçalho*/
     height: 4rem;
-    /*A medida REM busca o tamanho da fonte definida no padrão do navegador do usuário.*/
     background-color: var(--cor-azul-anil);
 
     display: flex;
-    /*Display flex dá atributos ao elemento. 
-    Ele passa a ser flexível e colocar seus elementos filhos em linha e não mais um embaixo do outro.*/
     justify-content: space-between;
-    /*Esta propriedade só funciona se o display: flex já tiver sido aplicado.
-    Ela empurra os elementos para as bordas do cabecalho*/
     align-items: center;
-    /*Define que os elementos devem estar no meio da altura do cabecalho*/
 
     padding: 8px 64px;
-    /* Define o espaçamento interno do cabecalho. 
-    8px para cima e baixo e 64px para esquerda e direita*/
 
     position: sticky;
-    /*Define que o cabeçalho deve chegar até uma certa altura e parar, ficar fixo*/
     top: 0;
-    /*Define que esta certa altura é o topo do site*/
-
     border-bottom: 2px solid var(--cor-branco);
-    /*Cria uma linha em baixo do cabecalho. 
-    Esta linha tem 2px, é reta e ter a cor branca*/
 }
 
 .cabecalho__home__link {
     color: var(--cor-branco);
     font-weight: 600;
-    /*Define que o o link home do cabecalho está em negrito*/
 }
 
-
-
-/**/
 .cabecalho__menu__lista {
-    /*Acessa a tag <ul>*/
     display: flex;
-    /*Coloca os itens filhos da tag <ul> (no caso as tag <li>) em linha e não embaixo do outro*/
     gap: 32px;
-    /*Cria um espaço entre cada tag <li>*/
 }
 
 .cabecalho__menu__lista__item {
-    /*Acessa a tag <a> que está no cabecalho*/
     color: var(--cor-branco);
-    /*Define a cor branco para as tag <a>*/
 }
 
-/*Menu cascata*/
-/* .cabecalho__menu-drop__lista__item{
-    display: block;
-    position: relative;
-    float: left;
-} */
 
 .cabecalho__menu-drop__lista {
     display: none;
@@ -94,7 +65,16 @@ li:hover li a:hover {
     background: var(--cor-azul-anil);
 }
 
+li  :hover {
+    cursor: pointer;
+}
 
+.lista-responsiva {
+    position: absolute;
+    top: 5rem;
+    right: 0;
+    text-align: right;
+}
 
 
 @media screen and (max-width: 1024px) {
