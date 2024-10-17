@@ -1,20 +1,11 @@
 .artigo {
-    /*Acessa o campo de classe artigo*/
     padding: 1.5rem 8rem 2.5rem 8rem;
-    /*Cria um espaçamento interno para o campo artigo
-    Altura: 1.5rem
-    Lado esquerdo: 8rem
-    embaixo: 2.5rem
-    baixo: 8rem;
-    
-    */
     height: 100%;
 }
 
 .container {
     margin-top: 2rem;
     gap: 40px;
-    /*Cria uma distância entre o elemento que está acima do container*/
 }
 
 .container__titulo {
@@ -34,8 +25,6 @@
 
     margin: 1.5rem 0;
     
-    /* margin: 0 20px 20px 0; */
-    /* width: calc(40vw - 10rem); */
 }
 
 .esq-dir {
@@ -58,15 +47,14 @@
 .legenda-imagem {
     margin: 0 auto;
     text-align: center;
-    width: 100%;
+    width: 80%;
     max-width: calc(30vw);
-
 }
 
 .container__botao__link {
     border: 1px solid var(--cor-azul-anil);
-    border-radius: 20px;
-    padding: 1rem 2rem;
+    border-radius: 10px;
+    padding: 0.75rem 1rem;
 
     background-color: var(--cor-azul-anil);
 
@@ -77,8 +65,8 @@
 .container__botao__link:hover {
     cursor: pointer;
     transition: .6s;
-    background-color: var(--cor-amarelo);
-    color: var(--cor-azul-anil);
+    background-color: var(--cor-azul-celeste);
+    color: var(--cor-branco);
     border: 1px solid var(--cor-azul-anil);
 }
 
