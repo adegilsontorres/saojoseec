@@ -1,13 +1,9 @@
-*{ /* O asterisco seleciona tudo que há no site. 
-    Todos os parâmetros criados aqui serão aplicados à tudo no site */
-    
-    padding: 0; /*Cada navegado tem sua interpretação padrão de margem e espaçamento interno. 
-    Esse código remover o padding padrão*/
-    margin: 0; /*Esse código remover a marging padrão*/
-    list-style: none; /*Alguns elementos do site são listas. Isso ajuda na acessibilidade para leitores de tela. 
-    O código "list-style: none" remove a bolinha padrão que fica nas listas não ordenadas (<ul>)*/
-    text-decoration: none; /*"text-decoration: none" serve para remover o underline dos links (<a>)*/
-    font-family: "Ubuntu", sans-serif; /*Define a fonte para todo o site*/
+*{    
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif; 
     flex-wrap: wrap;
 }
 
@@ -21,36 +17,32 @@
 
 
 
-:root { /*Root cria variáveis para nosso CSS. Assim é possível acessar os atributos através do nome. 
-    Se algum dia mudarmos as cores, irá mudar para todos elementos que estão utilizando variáveis nos site*/
-    --cor-azul-anil: #004899; /*Define a cor #004899 para a variável --cor-azul-anil*/
+:root { 
+    --cor-azul-anil: #004899;
     --cor-amarelo: #ffe41c;
     --cor-azul-celeste: #7ea3cc;
     --cor-branco: #fefded;
     --cor--preto: #212121;
 
-    --fonte-padrao: "Ubuntu", sans-serif; /*Define que a variável --fonte-padrao irá receber o valor "Ubuntu", 
-    caso não houver a fonte, o navegador deverá escolher qualquer fonte que não tenha "ponta"*/
+    --fonte-padrao: "Ubuntu", sans-serif; 
 
 }
 
 
-li a:hover { /*Sempre que passarmos o mouse em cima de qualquer lista que tenha uma tag <a>, os atributos abaixo serão aplicados*/
-    border-bottom: 2px solid var(--cor-amarelo); /*Cria uma borda reta e amarela embaixo da lista */
+li a:hover {
+    border-bottom: 2px solid var(--cor-amarelo);
 }
 
-.tarja { /*A tarja se repete ao site todo. Por isso está no style.css*/
-    background-color: var(--cor-azul-anil); /*Define a cor azul anil para o fundo da tarja*/
+.tarja { 
+    background-color: var(--cor-azul-anil);
     
-    color: var(--cor-branco); /*Define a cor do texto como branco*/
-    text-align: center; /*Define que o texto da tarja deverá estar centralizado*/
-    font-size: 24px; /*Define um tamanho*/
-    /* width: 100%; */
-    /* Removi este trecho, pois a tarja estava vazando para fora da página */
-    padding: 1.5rem; /*Define um espaçamento interno para começar a escrever o texto*/
+    color: var(--cor-branco); 
+    text-align: center; 
+    font-size: 24px; 
+    padding: 1.5rem;
 }
 
-.legenda-imagem { /*Assim como a tarja, a legenda se repete no site. Por isso está no style.css*/
+.legenda-imagem { 
     font-size: 14px;
     font-weight: 200;
     color: var(--cor--preto);
