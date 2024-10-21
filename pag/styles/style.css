@@ -7,6 +7,11 @@
     flex-wrap: wrap;
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 1rem;
+}
+
 .responsivo {
     display: none;
 }
