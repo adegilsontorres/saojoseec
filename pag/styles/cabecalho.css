@@ -65,7 +65,7 @@ li:hover li a:hover {
     background: var(--cor-azul-anil);
 }
 
-li  :hover {
+li:hover {
     cursor: pointer;
 }
 
@@ -101,7 +101,7 @@ li  :hover {
     }
     
     .cabecalho {
-        height: 4rem;
+        height: 3rem;
         padding: 1rem 2rem;
     }
     
@@ -115,7 +115,7 @@ li  :hover {
         padding: 1rem 0.75rem;
 
         position: absolute;
-        top: 6rem;
+        top: 5rem;
         right: 0px;
 
         text-align: right;
@@ -131,7 +131,7 @@ li  :hover {
     }
 
     .menu-mobile__lista__item {
-        margin: 0.25rem 0;
+        margin: 0.5rem 0;
     }
 
 }
