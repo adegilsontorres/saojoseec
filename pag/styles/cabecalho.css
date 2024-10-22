@@ -1,5 +1,5 @@
 .menu-mobile__lista, #menu,
-.cabecalho__menu-hamburguer, .container__rotulo {
+.cabecalho__menu-hamburguer, .container__rotulo, #menu-mais {
     display: none;
 }
 
@@ -16,6 +16,7 @@
     position: sticky;
     top: 0;
     border-bottom: 2px solid var(--cor-branco);
+
 }
 
 .cabecalho__home__link {
@@ -23,9 +24,13 @@
     font-weight: 600;
 }
 
+.cabecalho__menu {
+    align-items: center;
+}
+
 .cabecalho__menu__lista {
     display: flex;
-    gap: 32px;
+    gap: 16px;
 }
 
 .cabecalho__menu__lista__item {
@@ -37,7 +42,7 @@
     display: none;
 }
 
-li a {
+.cabecalho__menu-drop__lista li{
     display: block;
     text-decoration: none;
     color: var(--cor-branco);
@@ -47,37 +52,31 @@ li a {
     white-space: nowrap;
 }
 
-.cabecalho__menu-drop__lista__item a:hover {
+.cabecalho__menu-drop__lista__item {
+    color: var(--cor-branco);
+}
+
+.cabecalho__menu-drop__lista__item:hover li:hover {
     background: var(--cor-azul-celeste);
 }
 
 li:hover ul {
     display: block;
     position: absolute;
-}
-
-
-li:hover a {
-    background: var(--cor-azul-celeste);
-}
-
-li:hover li a:hover {
-    background: var(--cor-azul-anil);
+    top: 3.5rem;
+    background-color: var(--cor-azul-celeste);
 }
 
 li:hover {
     cursor: pointer;
 }
 
-.lista-responsiva {
-    position: absolute;
-    top: 5rem;
-    right: 0;
-    text-align: right;
-}
 
 
 @media screen and (max-width: 1024px) {
+    #menu-mais {
+        display: block;
+    }
     
     li a,
     ul li {
@@ -88,7 +87,16 @@ li:hover {
 }
 
 @media screen and (max-width: 768px) {
-
+    .lista-responsiva {
+        position: absolute;
+        top: 5rem;
+        right: 0;
+        text-align: right;
+    }
+    
+    .cabecalho__menu__lista {
+        display: none;
+    }
     
     .cabecalho__menu-hamburguer, .container__rotulo {
         display: block;
