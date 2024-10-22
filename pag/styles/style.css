@@ -33,9 +33,16 @@ html {
 
 }
 
+a {
+    color: var(--cor-branco);
+}
 
-li a:hover {
-    border-bottom: 2px solid var(--cor-amarelo);
+li {
+    padding: 0.5rem;
+}
+
+li:hover {
+    background-color: var(--cor-azul-celeste);
 }
 
 .tarja { 
