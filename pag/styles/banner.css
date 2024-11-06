@@ -1,0 +1,64 @@
+
+.banner {
+    box-sizing: border-box;
+    height: calc(100vh - 4rem);
+    background-size: cover;
+    background-attachment: fixed;
+    height: calc(100vh - 4rem);
+}
+
+.banner--padrao {
+    background-image: url('../assets/Sao_jose_EC_camisa.jpg');
+}
+
+.banner--estadio {
+    background-image: url('../assets/banner/Estádio-Martins-Pereira-Créditos-Facebook-do-Estádio.jpg');
+    background-position-y: 40%;
+}
+
+.banner--ano-masculino {
+    background-position-y: -40%;
+    background-image: url('../assets/banner/sao-jose-ec-lanca-uniforme-para-a-temporada-2024-veja-imagens.jpg');
+}
+
+.banner--ano-feminino {
+    background-position-y: -40%;
+    background-image: url('../assets/banner/equipe_sao_jose_ec_feminino.jpeg');
+    /* background-image: url('../assets/artigo/Sao-Jose-feminino-disputando-o-Campeonato-Paulista-2024-de-futebol-feminino-Foto-Mauro-HoritaAg-Paulistao.webp'); */
+}
+
+.banner--historia {
+    background-image: url('../assets/banner/Time_do_Esporte_Clube_São_José_que_foi_campeão_da_Série_A2.webp');
+}
+
+.banner--conquistas-feminino {
+    background-image: url('../assets/banner/São_jose_feminino_campeão_libertadores_2014.webp');
+    background-position: 0 -2rem;
+}
+
+.banner--conquistas-masculino {
+    background-image: url('../assets/banner/sao_jose_ec_campeao_2020.webp');
+    background-position-y: 100%; 
+}
+
+.banner--torcida {
+    background-image: url('../assets/banner/sao-jose-x-capivariano-ingressos-para-o-primeiro-jogo-da-final-da-a-3-ja-estao-a-venda-1536x1027.jpg');
+    background-position-y: 100%; 
+}
+
+.banner--hino {
+    background-image: url('../assets/banner/camiseta__banner2.jpg');
+    background-position-y: 20%; 
+}
+
+
+
+
+
+@media screen and (max-width: 420px) {
+    .banner {
+        background-repeat: no-repeat;
+        background-position: -50vw;
+        background-size: cover;
+    }
+}

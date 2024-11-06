@@ -1,0 +1,87 @@
+*{    
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Ubuntu", sans-serif; 
+    flex-wrap: wrap;
+}
+
+:root { 
+    --cor-azul-anil: #004899;
+    --cor-amarelo: #ffe41c;
+    --cor-azul-celeste: #7ea3cc;
+    --cor-branco: #fefded;
+    --cor--preto: #212121;
+
+    --fonte-padrao: "Ubuntu", sans-serif; 
+
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 6rem;
+}
+
+a {
+    padding: 0.25rem;
+}
+
+a:hover {
+    transition: 0.2s;
+    border-bottom: 4px solid var(--cor-amarelo);
+}
+
+strong, strong a {
+    color: var(--cor-azul-anil);
+}
+
+.cabecalho a, .rodape a {
+    color: var(--cor-branco);
+}
+
+ul li {
+    padding: 0.5rem;
+}
+
+.tarja { 
+    background-color: var(--cor-azul-anil);
+    
+    color: var(--cor-branco); 
+    text-align: center; 
+    font-size: 24px; 
+    padding: 1.5rem;
+}
+
+.legenda-imagem { 
+    font-size: 14px;
+    font-weight: 200;
+    color: var(--cor--preto);
+}
+
+
+@media screen and (max-width: 1024px) {
+    
+    .responsivo {
+        display: block;
+    }
+    
+    .ocultar {
+        display: none;
+    }
+}
+@media screen and (max-width: 768px) {
+    
+
+    
+}
+
+@media screen and (max-width: 420px) {
+    .tarja {
+        font-size: 1rem;
+        height: 1.5rem;
+        padding: 0.5rem;
+    }
+    
+}
+
