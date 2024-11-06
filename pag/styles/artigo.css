@@ -101,6 +101,13 @@ iframe {
     background-color: var(--cor-azul-celeste);
 }
 
+.container__texto__lista{
+    margin: 1rem 0;
+}
+
+.container__texto__lista li {
+    font-size: 1.2rem;
+}
 
 @media screen and (max-width: 768px) {
     .container {
@@ -112,10 +119,14 @@ iframe {
     }
 
     .container__imagem {
-
+        margin: 1rem auto;
         display: flex;
         flex-direction: column;
-        width: 50%;
+        width: 100%;
+    }
+
+    .legenda-imagem {
+        width: 100%;    
     }
     
     .artigo {
@@ -124,6 +135,10 @@ iframe {
 
     .container__texto {
         width: 100%;
+    }
+
+    .esq-dir, .dir-esq {
+        float: none;
     }
 
 }
