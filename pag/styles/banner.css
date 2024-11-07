@@ -16,6 +16,11 @@
     background-position-y: 40%;
 }
 
+.banner--ano-base {
+    background-position-y: 70%;
+    background-image: url('../assets/banner/sao_jose_ec_sub_15.webp');
+}
+
 .banner--ano-masculino {
     background-position-y: -40%;
     background-image: url('../assets/banner/sao-jose-ec-lanca-uniforme-para-a-temporada-2024-veja-imagens.jpg');
@@ -24,7 +29,6 @@
 .banner--ano-feminino {
     background-position-y: -40%;
     background-image: url('../assets/banner/equipe_sao_jose_ec_feminino.jpeg');
-    /* background-image: url('../assets/artigo/Sao-Jose-feminino-disputando-o-Campeonato-Paulista-2024-de-futebol-feminino-Foto-Mauro-HoritaAg-Paulistao.webp'); */
 }
 
 .banner--historia {
@@ -50,10 +54,6 @@
     background-image: url('../assets/banner/camiseta__banner2.jpg');
     background-position-y: 20%; 
 }
-
-
-
-
 
 @media screen and (max-width: 420px) {
     .banner {
