@@ -21,6 +21,10 @@
     gap: 64px;
 }
 
+.rodape__acesso__lista__item {
+    color: var(--cor-branco);
+}
+
 .rodape__acesso__lista__item__link {
     color: var(--cor-branco);
 }
